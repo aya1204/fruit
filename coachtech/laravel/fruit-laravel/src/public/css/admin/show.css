@@ -1,0 +1,215 @@
+/* 商品一覧>商品名 */
+.header-nav{
+    width: 100%;
+    max-width: 1512px;
+    padding: 0 356px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* 商品画像や詳細からボタンまで */
+.product-detail form {
+    width: 100%;
+    max-width: 1512px;
+    height: 797px;
+    padding: 0 356px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 商品画像、商品名、値段、季節まで */
+.product-top {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 800px;
+    height: 322px;
+    gap: 30px;
+}
+
+/* 左：商品画像 */
+.product-image {
+    width: 374px;
+    height: auto;
+    gap: 10px;
+    flex: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image img {
+    width: 374px;
+    height: 322px;
+}
+
+/* 商品詳細 */
+.form__group {
+    width: auto;
+    /* height: 77px; */
+    gap: 10px;
+    margin: 40px 0;
+
+}
+
+/* 右：商品名、値段、季節 */
+.product-info input.form-control {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 396px;
+    height: auto;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* ファイルを選択 */
+input {
+    width: 100%;
+}
+
+.season-checkboxes {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* チェックボックス */
+.check {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-sizing: content-box;
+    border: 1px solid #4B4B4B;
+    background: #FFFFFF;
+    cursor: pointer;
+    appearance: none;
+}
+
+/* チェックした後の背景 */
+.check:checked {
+    background-color: #000000;
+}
+
+/* チェックした後の文字 */
+.check:checked::after {
+    color: white;
+    content: '✔︎';
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+/* 商品説明 */
+.form__group label{
+    display: block;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* 商品説明のスタイル */
+.product-detail .form__group{
+    margin-bottom: 20px;
+}
+
+textarea{
+    resize: none;
+}
+/* 商品の説明を入力 */
+.manual {
+    width: 100%;
+    max-width: 800px;
+    height: 160px;
+    box-sizing: border-box;
+    font-family: Hiragino Kaku Gothic Pro;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    display: block;
+}
+
+/* 戻る・変更を保存・ゴミ箱ボタン */
+.form__actions-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+}
+
+/* ボタンの位置、サイズ */
+.form__actions {
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+/* 戻るボタン */
+.btn.btn-back {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background: #E0DFDE;
+    box-shadow: 0px 4px 10px 0px #0000001A;
+    font-family: Hiragino Kaku Gothic Pro;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #4B4B4B;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+/* 変更を保存ボタン */
+.btn.btn-primary {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background: #F5C800;
+    box-shadow: 0px 4px 10px 0px #0000001A;
+    font-family: Hiragino Kaku Gothic Pro;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #4B4B4B;
+    border: none;
+}
+
+form.form__actions-delete{
+    width: 50px;
+    height: 50px;
+    padding: 0 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ゴミ箱ボタンフォーム */
+.btn.btn-danger.btn-icon{
+    width: 50px;
+    border: none;
+    background: none;
+}
+
+/* ゴミ箱アイコン */
+.form__actions-delete img{
+    width: 20px;
+    height: 23px;
+    top: 5.33px;
+    left: 5.33px;
+}
