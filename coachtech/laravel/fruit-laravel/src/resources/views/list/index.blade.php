@@ -42,7 +42,7 @@
                         @elseif(request()->sort_price == 'desc')
                         <span>価格が高い順で表示</span>
                         @endif
-                        <a href="{{ route('products.index') }}" class="clear-sort">×
+                        <a href="{{ route('products.index') }}" class="clear-sort"><span class="clear-sort-icon">×</span>
                         </a>
                         @endif
                     </form>
