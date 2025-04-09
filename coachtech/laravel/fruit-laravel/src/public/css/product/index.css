@@ -1,4 +1,4 @@
-main{
+main {
     width: 1512px;
     height: 1000px;
     padding-top: 70px;
@@ -7,7 +7,7 @@ main{
 }
 
 /* 商品一覧、商品追加ボタンのフォーム */
-.product-form__heading{
+.product-form__heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,7 +19,7 @@ main{
 }
 
 /* 商品一覧 */
-h2{
+h2 {
     width: 128px;
     height: 48px;
     font-family: Hiragino Kaku Gothic Pro;
@@ -32,7 +32,7 @@ h2{
 }
 
 /* ＋商品追加ボタンのフォーム */
-.add-product-button.text-right{
+.add-product-button.text-right {
     width: auto;
     height: auto;
     padding: 13px 20px;
@@ -45,7 +45,7 @@ h2{
 }
 
 /* +商品の追加ボタン */
-.btn.btn-primary{
+.btn.btn-primary {
     text-decoration: none;
     color: #4B4B4B;
     font-family: Hiragino Kaku Gothic Pro;
@@ -57,21 +57,21 @@ h2{
 }
 
 /* 商品名で検索〜価格で並べ替え */
-.col-md-3{
+.col-md-3 {
     display: flex;
     flex-flow: column;
     width: 240px;
-    height: 267px;
+    height: 328px;
     gap: 40px;
 }
 
 /* 商品名で検索〜検索ボタンフォーム */
-form{
+form {
     height: 114px;
 }
 
 /* 商品名で検索フォーム */
-.search-bar{
+.search-bar {
     height: 70px;
     padding-bottom: 20px;
     gap: 10px;
@@ -79,7 +79,7 @@ form{
 }
 
 /* 商品名で検索（テキスト入力） */
-.form-control{
+.form-control {
     width: 100%;
     height: 40px;
     padding: 14.5px 0;
@@ -96,13 +96,13 @@ form{
 }
 
 /* 商品名で検索 */
-::placeholder{
+::placeholder {
     color: #E0DFDE;
     padding-left: 15px;
 }
 
 /* 検索ボタン */
-.btn-primary.mt-2{
+.btn-primary.mt-2 {
     width: 240px;
     height: 44px;
     gap: 10px;
@@ -120,7 +120,7 @@ form{
 }
 
 /* 価格順で表示〜価格で並べ替えフォーム */
-form#sortForm{
+form#sortForm {
     height: 113px;
     padding-bottom: 20px;
     gap: 20px;
@@ -130,7 +130,7 @@ form#sortForm{
 }
 
 /* 価格順で表示 */
-.sortform-title{
+.sortform-title {
     height: 30px;
     font-family: Hiragino Kaku Gothic Pro;
     font-weight: 600;
@@ -142,7 +142,7 @@ form#sortForm{
 }
 
 /* 価格で並べ替え */
-select#sort-price.form-control{
+select#sort-price.form-control {
     height: 43px;
     justify-content: space-between;
     padding: 11px 10px;
@@ -159,7 +159,61 @@ select#sort-price.form-control{
     margin-top: 10px;
 }
 
-.col-md-9{
+/* 並び替え順で表示 */
+.sort_title{
+    font-family: Hiragino Kaku Gothic Pro;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border-radius: 21px;
+    padding: 10px;
+    border: 1px solid #F5C800;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 10px;
+    width: 150px;
+}
+
+/* ×ボタンフォーム */
+.clear-sort{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0 5px;
+    /* ボタンの周りに少しスペース */
+    position: absolute;
+    top: 476px;
+    left: 155px;
+}
+
+/* ×ボタン */
+.clear-sort-icon{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-width: 1px;
+    padding: 2px 5px;
+    border: 1px solid #F5C800;
+    color: #F5C800;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 50%;
+    /* 丸い形に */
+    cursor: pointer;
+}
+
+.col-md-9 {
     width: 1162px;
     height: 790px;
     gap: 40px;
@@ -171,20 +225,20 @@ select#sort-price.form-control{
     /* 商品カードを上に揃える */
 }
 
-.product-row{
+.product-row {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
 /* 画像、商品名、値段の集合体フォーム */
-.col-md-4{
+.col-md-4 {
     width: calc(33.333% - 20px);
     margin-bottom: 20px;
 }
 
 /* 画像、商品名、値段フォーム */
-.product-card{
+.product-card {
     width: 374px;
     height: 350px;
     border-radius: 5px;
@@ -193,7 +247,7 @@ select#sort-price.form-control{
 }
 
 /* 商品画像 */
-.product-card img{
+.product-card img {
     width: 100%;
     height: 281px;
     object-fit: cover;
@@ -201,7 +255,7 @@ select#sort-price.form-control{
 }
 
 /* 商品名、値段 */
-.product-card h5{
+.product-card h5 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -211,15 +265,16 @@ select#sort-price.form-control{
     font-size: 18px;
     font-weight: bold;
 }
+
 .product-card-link {
     color: #4B4B4B;
-     /* 文字色を #4B4B4B に変更 */
+    /* 文字色を #4B4B4B に変更 */
     text-decoration: none;
-     /* アンダーラインを消す */
+    /* アンダーラインを消す */
 }
 
 /* ページネーションフォーム */
-.pagination{
+.pagination {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -228,9 +283,9 @@ select#sort-price.form-control{
 }
 
 /* <12345> */
-.pagination > div,
+.pagination>div,
 .pagination a,
-.pagination span{
+.pagination span {
     font-size: 14px;
     width: 32px;
     height: 32px;
@@ -240,7 +295,7 @@ select#sort-price.form-control{
     border-radius: 5px;
     margin: 0 4px;
     background-color: #fff;
-    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     text-decoration: none;
     font-family: Hiragino Kaku Gothic Pro;
@@ -253,12 +308,12 @@ select#sort-price.form-control{
 }
 
 /* ＜＜前＞＞ */
-.flex.justify-between.flex-1.sm\:hidden{
+.flex.justify-between.flex-1.sm\:hidden {
     display: none;
 }
 
 /* Showing 1to */
-.text-sm.text-gray-700.leading-5{
+.text-sm.text-gray-700.leading-5 {
     display: none;
 }
 
@@ -268,5 +323,3 @@ select#sort-price.form-control{
     color: white;
     font-weight: bold;
 }
-
-
