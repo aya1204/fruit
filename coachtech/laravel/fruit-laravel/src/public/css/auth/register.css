@@ -128,15 +128,6 @@ textarea {
     resize: none;
 }
 
-/* .manual::placeholder{
-    text-align: left;
-    vertical-align: top;
-    position: absolute;
-    top: 0;
-    padding-top: 0;
-    padding-left: 0;
-} */
-
 /* ボタンの位置、サイズ */
 .form__button {
     width: 760px;
