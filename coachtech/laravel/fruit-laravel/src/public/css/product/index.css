@@ -13,7 +13,7 @@ main{
     align-items: center;
     width: auto;
     height: 50px;
-    padding: 0 40px;
+    padding-right: 40px;
     gap: 1167px;
     margin-bottom: 20px;
 }
@@ -33,14 +33,15 @@ h2{
 
 /* ＋商品追加ボタンのフォーム */
 .add-product-button.text-right{
-    width: 137px;
-    height: 25px;
+    width: auto;
+    height: auto;
     padding: 13px 20px;
     gap: 10px;
     border-radius: 5px;
     background: #FFA929;
     box-shadow: 0px 4px 10px 0px #0000001A;
     text-align: center;
+    margin-right: 40px;
 }
 
 /* +商品の追加ボタン */
