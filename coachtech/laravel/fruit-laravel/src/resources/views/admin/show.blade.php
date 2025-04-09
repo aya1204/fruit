@@ -128,7 +128,10 @@
         </div>
     </form>
 
-    <form id="delete-form" action="{{route('admin.destroy', $product->id) }}" method="POST"></form>
+    <form id="delete-form" action="{{route('admin.destroy', $product->id) }}" method="POST">
+        @csrf
+        @method('DELETE')
+    </form>
 </div>
 
 @endsection
