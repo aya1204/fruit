@@ -37,7 +37,12 @@
                         </select>
                         <!-- 並べ替えが選択されている場合はリセットボタンを表示 -->
                         @if(request()->filled('sort_price'))
-                        <a href="{{ route('products.index') }}" class="clear-sort">並び替えを解除 ×
+                        @if(request()->sort_price == 'asc')
+                        <span>価格が安い順で表示</span>
+                        @elseif(request()->sort_price == 'desc')
+                        <span>価格が高い順で表示</span>
+                        @endif
+                        <a href="{{ route('products.index') }}" class="clear-sort">×
                         </a>
                         @endif
                     </form>
