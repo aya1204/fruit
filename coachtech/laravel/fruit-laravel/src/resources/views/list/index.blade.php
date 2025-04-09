@@ -29,11 +29,18 @@
                 <input type="hidden" name="search" value="{{ request()->search }}">
 
                 <div class="sortform-title">価格順で表示
-                    <select name="sort_price" class="form-control" id="sort-price" onchange="document.getElementById('sortForm').submit();">
-                        <option value="">価格で並べ替え</option>
-                        <option value="asc" {{ request()->sort_price == 'asc' ? 'selected' : '' }}>価格が安い順</option>
-                        <option value="desc" {{ request()->sort_price == 'desc' ? 'selected' : '' }}>価格が高い順</option>
-                    </select>
+                    <form id="sortForm" action="{{ route('products.index') }}" method="GET">
+                        <select name="sort_price" class="form-control" id="sort-price" onchange="document.getElementById('sortForm').submit();">
+                            <option value="">価格で並べ替え</option>
+                            <option value="asc" {{ request()->sort_price == 'asc' ? 'selected' : '' }}>価格が安い順</option>
+                            <option value="desc" {{ request()->sort_price == 'desc' ? 'selected' : '' }}>価格が高い順</option>
+                        </select>
+                        <!-- 並べ替えが選択されている場合はリセットボタンを表示 -->
+                        @if(request()->filled('sort_price'))
+                        <a href="{{ route('products.index') }}" class="clear-sort">並び替えを解除 ×
+                        </a>
+                        @endif
+                    </form>
                 </div>
             </form>
         </div>
