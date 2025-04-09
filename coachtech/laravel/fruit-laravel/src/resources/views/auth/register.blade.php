@@ -99,7 +99,7 @@
                 </div>
                 <div class="form__group-content-manual">
                     <div class="form__input--text">
-                        <input class="manual" type="text" name="manual" placeholder="商品の説明を入力" value="{{ old('manual') }}" />
+                        <textarea class="manual" name="manual" placeholder="商品の説明を入力">{{ old('manual') }}</textarea>
                     </div>
                     <div class="form__error">
                         @if ($errors->has('manual'))
